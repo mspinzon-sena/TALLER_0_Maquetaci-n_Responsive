@@ -24,68 +24,7 @@ body{
 h1,h2,h3,h4,h5{
      font-family: 'Marcellus', serif;
 }
-
-/*Mobile First*/
-nav{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-}
-nav a{
-    color: var(--blanco);
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Marcellus', serif;
-    font-size: 1.3rem;
-}
-    nav a:hover{
-        width: 100%;
-        background-color: #0B3860;
-    }
-    .navbarbutton{
-        background-color: transparent;
-        border: none;
-        border-radius: 3px;
-        font-size: 1em;
-        padding: 0.5rem;
-        font-family: 'Marcellus', serif;
-        color: var(--blanco);
-        cursor: pointer;
-    }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem; 
-    background-color: var(--negro2);
-}
-    .logo i{
-        color: var(--blanco);
-        font-size: 2rem;
-    }
-    .logo img{
-        width: 40%;
-        max-width: 200px;
-    }
-.menu{
-    background-color: rgba(1, 10, 52, 0.802);;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--azulnegro);
-    display: none;
-}
-.menu-hr{
-    width: 90%;
-    background-color: var(--blanco);
-}
-.item{
-    padding: 1rem;
-}
-
-/*Barra de Navegacion
+/*Barra de Navegacion*/
 nav {
     display: flex;
     align-items:center;
@@ -116,7 +55,7 @@ nav {
 .menu i{
     margin-right: 0.5rem;
 }
-/*Seccion Banner
+/*Seccion Banner*/
 .banners{
     display:flex;
     flex-direction: column;
@@ -136,7 +75,7 @@ nav {
     color: var(--blanco);
     width: 50%;
 }
-/*Seccion Context
+/*Seccion Context*/
 .contexts{
     display:flex;
     align-items:center;
@@ -150,7 +89,7 @@ nav {
     height: 13rem;
     flex-basis: 50%;
 }
-/*Seccion Features
+/*Seccion Features*/
 #features{
     display:flex;
     flex-direction: column;
@@ -186,45 +125,4 @@ nav {
 }
 .feature-black{
     background-color: rgba(0,0,0,0.59);
-}
-*/
-/*Resolución Tablet*/
-@media screen and (min-width: 768px) {
-   
-}
-/*Resolución NoteBooks*/
-@media screen and (min-width: 1024px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        background-color: var(--negro2);
-    }
-    .logo{
-        padding: 1rem;
-    }
-    .logo img{
-        width: 100%;
-        max-width: 180px;
-    }
-    .logo i{ 
-        display: none;
-    }
-    .menu{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: var(--negro2);
-    }
-    .menu-hr{
-        display: none;
-    }
-    .navbarbutton{
-        background-color: var(--azuloscuro);
-    }
-    nav a:hover{
-        width: auto;
-        background-color: transparent;
-    }
 }
