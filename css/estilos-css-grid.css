@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+--azulclaro: #48D6ED;
+--azuloscuro: #337AB7;
+--azulnegro: #303342;
+--negro: #333333;
+--negro2: #000;
+--gris: #B2B3B3;
+--fondo: #FFFEFC;
+--verdeazul: #157A8A;
+--Magenta: #9C2759;
+--blanco: #fff;
+--degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+     font-family: 'Marcellus', serif;
+}
+/*Mobile - Tablet*/
+#container-grid{
+    display: grid;
+    grid-template:
+            "nav" auto
+            "banner" 400px
+            "descripcion" auto
+            "feature" auto   /*Quizas de problemas porque es "feautes"*/
+            "ubicacion" auto
+            "opinion" auto
+            "footer" auto
+                    ;
+}
+
+    /*Nav*/
+        nav{
+            grid-area: nav;
+            display: grid;
+            grid-template-areas: 
+            "logo"
+            "menu"
+            ;
+            font-family: 'Marcellus', serif;
+            font-size: 1.3rem;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+        }
+        .logo{
+            grid-area: logo;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo-img menu-bars";
+            background-color: var(--negro2);
+            padding: 1rem;
+
+        }
+        .logo img{
+            grid-area: logo-img;
+            justify-self: start;
+            width: 50%;
+            max-width: 200px;
+            
+        }
+
+        .logo i{
+            grid-area: menu-bars;
+            color: var(--blanco);
+            font-size: 2em;
+            justify-self: end;
+        }
+    /*Cierre Nav*/
+    /*Menu*/
+        .menu{
+            grid-area: menu;
+            display: grid;
+            background-color: rgba(1, 10, 52, 0.838);
+            align-items: center;
+            display: none; /*Para que no se vea el menu antes de clickear el boton de hamburguesa*/
+        }
+        .menu-hr{
+            color:var(--blanco);
+            width: 90%;
+            justify-self: center;
+        }
+        .item{
+            padding: 1rem;
+        }
+
+        nav a{
+            color: var(--blanco);
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover{
+            width: 100%;
+            background-color: #0B3860;
+        }
+        .navbarbutton{
+            background-color: transparent;
+            border: none;
+            border-radius: 3px;
+            font-size: 1em;
+            padding: 0.5rem;
+            font-family: 'Marcellus', serif;
+            color: var(--blanco);
+            cursor: pointer;
+        }
+    /*Cierre menu*/
+    /*Banner*/
+        #banner{
+            background-image: url(../img/slide1.jpg);
+            background-size: cover;
+            background-position: 50% 50%; /*Para que se vea solo el centro de la imagen cuando esta en dispositivos mobiles*/
+            min-height: 400px;
+            margin-top: 70px;
+        }
+    /*Cierre banner*/
+
+/*Resolución tablets*/
+@media screen and (min-width:768px) {
+    
+}
+/*Resolución medias*/
+@media screen and (min-width:1024px) {
+    nav {
+        background-color: var(--negro2);
+        grid-template-columns: 200px auto;
+        grid-template-areas:
+        "logo menu" ;
+                        
+    }
+    .logo{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 100%;
+        max-width: 180px;
+    }
+    .logo i{ 
+        display: none;/*Ocultar icono de barras*/
+    }
+    .menu{
+        display: block;
+        background-color: var(--negro2);
+        display:grid;
+        grid-template-columns: 150px 150px 150px 200px;
+        justify-self: end;
+        align-self: center;
+       
+    }
+    .item{
+        padding: 0;
+    }
+    .menu-hr{
+        display: none;
+    }
+    .navbarbutton{
+        background-color: var(--azuloscuro);
+        align-self: center;
+    }
+    nav a:hover{
+        width: auto;
+        background-color: transparent;
+    }
+}
+
+/*Resolución Macro*/
+    @media screen and (min-width:1308px) {
+        body{
+            background-color: #eaeaea;
+        }
+        #container-grid{
+           max-width: 1300px;
+           margin: 0 auto;
+        }
+    }
