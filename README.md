@@ -4,9 +4,9 @@ Taller N°0 Java - Maquetación Responsive
 
 ## Documento
 
-```bash
-https://sites.google.com/misena.edu.co/desarrollo-front-end-js/taller-0
-```
+
+[Google Site](https://sites.google.com/misena.edu.co/desarrollo-front-end-js/taller-0)
+
 
 ## Clonación
 
