@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5{
     display: grid;
     grid-template:
             "nav" auto
-            "banner" 400px
+            "banner" auto
             "descripcion" auto
             "feature" auto   /*Quizas de problemas porque es "feautes"*/
             "ubicacion" auto
@@ -117,20 +117,50 @@ h1,h2,h3,h4,h5{
     /*Cierre menu*/
     /*Banner*/
         #banner{
+            display:flex;
+            flex-direction: column;
+            justify-content:end;
+
             background-image: url(../img/slide1.jpg);
             background-size: cover;
-            background-position: 50% 50%; /*Para que se vea solo el centro de la imagen cuando esta en dispositivos mobiles*/
+            background-position: 50% 40%; /*Para que se vea solo el centro de la imagen cuando esta en dispositivos mobiles*/
             min-height: 400px;
             margin-top: 70px;
+            
         }
+        .banners-text{
+            background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+            padding: 1.4rem 0 4rem 3rem ;
+        }
+        .banner-text{
+            font-size: 3rem;
+            font-weight:500;
+            color: var(--blanco);
+        }
+
     /*Cierre banner*/
 
+    /*Inicio descripcion*/
+    .descripcion-text{
+        font-size: 1.7rem;
+        padding: 3.2rem;
+    }
+    .descripcion-logo{
+        display: none;
+    }
+    /*Cierre descripcion*/
+
+    /*Inicio feautures*/
+
+    /*Cierre feautures*/
 /*Resolución tablets*/
 @media screen and (min-width:768px) {
     
 }
 /*Resolución medias*/
 @media screen and (min-width:1024px) {
+
+    /*Inicio Nav*/
     nav {
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
@@ -171,6 +201,69 @@ h1,h2,h3,h4,h5{
         width: auto;
         background-color: transparent;
     }
+    /*Cierre Nav*/
+
+    /*Inicio Banner*/
+    .banner-text{
+        width: 50%;
+    }
+    /*Cierre Banner*/
+
+    /*Inicio descripcion*/
+    .descripcion{
+        display:flex;
+        align-items:center;
+        padding: 4rem;
+    }
+    .descripcion-text{
+        font-size: 1.3rem;
+        flex-basis: 70%;
+    }
+    .descripcion-logo{
+        display: block;
+        height: 13rem;
+        flex-basis: 30%;
+    }
+    /*Cierre descripcion*/
+
+    /*Inicio feature*/
+    #features{
+        display:flex;
+        flex-direction: column;
+        background-image: url(../img/bg-features.png) ;
+        padding: 1rem;
+        color: var(--blanco);
+    }
+    .features-title{
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-size: 2em;
+    }
+    .features-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .feature{
+        text-align: center;
+        padding: 1rem;
+            min-width: 180px;
+            max-width: 250px;  
+        border-radius: 3px;  
+    }
+    .feature i{
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .feature-blue{
+        background-color: #00325eae;
+    }
+    .feature-black{
+        background-color: rgba(0,0,0,0.59);
+    }
+    /*Cierre feature*/
 }
 
 /*Resolución Macro*/
