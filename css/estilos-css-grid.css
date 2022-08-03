@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5{
             "nav" auto
             "banner" auto
             "descripcion" auto
-            "feature" auto   /*Quizas de problemas porque es "feautes"*/
+            "features" auto   /*Quizas de problemas porque es "feautes"*/
             "ubicacion" auto
             "opinion" auto
             "footer" auto
@@ -120,13 +120,11 @@ h1,h2,h3,h4,h5{
             display:flex;
             flex-direction: column;
             justify-content:end;
-
             background-image: url(../img/slide1.jpg);
             background-size: cover;
             background-position: 50% 40%; /*Para que se vea solo el centro de la imagen cuando esta en dispositivos mobiles*/
             min-height: 400px;
-            margin-top: 70px;
-            
+            margin-top: 70px;      
         }
         .banners-text{
             background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
@@ -151,6 +149,52 @@ h1,h2,h3,h4,h5{
     /*Cierre descripcion*/
 
     /*Inicio feautures*/
+   
+    #features{
+        display:flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: 100%;
+        background-image: url(../img/bg-features.png) ;
+       
+        color: var(--blanco);
+        text-shadow: 1px 1px 4px var(--negro);
+    }
+    .features-title{
+        font-weight: normal;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-size: 2.5em ;
+        padding: 2rem 10rem;
+    }
+    .features-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 1.5rem 0;
+    }
+    .feature{
+        text-align: center;
+        padding: 2rem;
+            min-width: 180px;
+            max-width: 250px;  
+        border-radius: 3px;  
+    }
+    .feature i{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .feature-blue{
+        font-size: 1.9rem;
+        margin: 2rem 0;
+        background-color: #00325eae;
+    }
+    .feature-black{
+        font-size: 1.9rem;
+        margin: 2rem 0;
+        background-color: rgba(0,0,0,0.59);
+    }
+
 
     /*Cierre feautures*/
 /*Resolución tablets*/
@@ -227,6 +271,7 @@ h1,h2,h3,h4,h5{
     /*Cierre descripcion*/
 
     /*Inicio feature*/
+    /*
     #features{
         display:flex;
         flex-direction: column;
@@ -242,9 +287,9 @@ h1,h2,h3,h4,h5{
     .features-description{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        justify-content: center;
+        margin:2rem 0;
+
     }
     .feature{
         text-align: center;
@@ -258,10 +303,54 @@ h1,h2,h3,h4,h5{
         margin-bottom: 1.5rem;
     }
     .feature-blue{
+        margin: 1rem;
         background-color: #00325eae;
+        
     }
     .feature-black{
         background-color: rgba(0,0,0,0.59);
+        margin: 1rem;
+    }
+    .feature-1{
+        display:flex;
+    }
+    .feature-2{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    */
+    #features{
+        padding:1rem 0;
+    }
+    .features-title{
+        font-size: 2em ;
+        padding: 0;
+    }
+    .features-description{
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .feature{
+        padding: 1rem;
+    }
+    .feature i{
+        font-size: 2.2rem;
+    }
+    .feature-blue{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .feature-black{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .feature-1{
+        display:flex;
+    }
+    .feature-2{
+        display: flex;
+        flex-direction: row-reverse;
     }
     /*Cierre feature*/
 }
