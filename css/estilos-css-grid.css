@@ -78,6 +78,7 @@ h1,h2,h3,h4,h5{
             justify-self: end;
         }
     /*Cierre Nav*/
+
     /*Menu*/
         .menu{
             grid-area: menu;
@@ -115,6 +116,7 @@ h1,h2,h3,h4,h5{
             cursor: pointer;
         }
     /*Cierre menu*/
+
     /*Banner*/
         #banner{
             display:flex;
@@ -135,68 +137,113 @@ h1,h2,h3,h4,h5{
             font-weight:500;
             color: var(--blanco);
         }
-
     /*Cierre banner*/
 
     /*Inicio descripcion*/
-    .descripcion-text{
-        font-size: 1.7rem;
-        padding: 3.2rem;
-    }
-    .descripcion-logo{
-        display: none;
-    }
+        .descripcion-text{
+            font-size: 1.7rem;
+            padding: 3.2rem;
+        }
+        .descripcion-logo{
+            display: none;
+        }
     /*Cierre descripcion*/
 
     /*Inicio feautures*/
-   
-    #features{
-        display:flex;
-        flex-direction: column;
-        background-size: cover;
-        background-position: 100%;
-        background-image: url(../img/bg-features.png) ;
-       
-        color: var(--blanco);
-        text-shadow: 1px 1px 4px var(--negro);
-    }
-    .features-title{
-        font-weight: normal;
-        background-color: rgba(0, 0, 0, 0.2);
-        text-align: center;
-        font-size: 2.5em ;
-        padding: 2rem 10rem;
-    }
-    .features-description{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 1.5rem 0;
-    }
-    .feature{
-        text-align: center;
-        padding: 2rem;
-            min-width: 180px;
-            max-width: 250px;  
-        border-radius: 3px;  
-    }
-    .feature i{
-        font-size: 3.2rem;
-        margin-bottom: 1.5rem;
-    }
-    .feature-blue{
-        font-size: 1.9rem;
-        margin: 2rem 0;
-        background-color: #00325eae;
-    }
-    .feature-black{
-        font-size: 1.9rem;
-        margin: 2rem 0;
-        background-color: rgba(0,0,0,0.59);
-    }
-
-
+        #features{
+            display:flex;
+            flex-direction: column;
+            background-size: cover;
+            background-position: 100%;
+            background-image: url(../img/bg-features.png);     
+            color: var(--blanco);
+            text-shadow: 1px 1px 4px var(--negro);
+        }
+        .features-title{
+            font-weight: normal;
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 2.5em ;
+            padding: 2rem 10rem;
+        }
+        .features-description{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 1.5rem 0;
+        }
+        .feature{
+            text-align: center;
+            padding: 2rem;
+                min-width: 180px;
+                max-width: 250px;  
+            border-radius: 3px;  
+        }
+        .feature i{
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .feature-blue{
+            font-size: 1.9rem;
+            margin: 2rem 0;
+            background-color: #00325eae;
+        }
+        .feature-black{
+            font-size: 1.9rem;
+            margin: 2rem 0;
+            background-color: rgba(0,0,0,0.59);
+        }
     /*Cierre feautures*/
+
+    /*Inicio Ubícanos*/
+        #ubicacion{
+            display: flex;
+            flex-direction: column; 
+        }
+        #ubicacion hr{
+            width:90%;
+            margin-top: 0.5rem;
+            border-color: var(--azulclaro);
+        }
+        .ubicacion-title{
+            text-align: center;
+            font-size: 4rem;
+            padding: 1.5rem;
+        }
+        .ubicacion-map{
+            text-align: center;
+        }
+        .ubicacion-map iframe{
+            width: 95%;
+            height: 480px;
+        } 
+        .ubicacion-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            padding: 2rem;
+        }
+
+    /*Cierre Ubícanos*/
+
+    /*Inicio Banner*/
+        #opinion{
+            color:var(--blanco)
+        }
+        .opinion-title{
+            background-color:var(--negro);
+            font-weight: normal;
+            text-align: center;
+            font-size: 3rem;
+            padding: 1.5rem;
+        }
+    /*Cierre Banner*/
+
+
 /*Resolución tablets*/
 @media screen and (min-width:768px) {
     
@@ -247,13 +294,13 @@ h1,h2,h3,h4,h5{
     }
     /*Cierre Nav*/
 
-    /*Inicio Banner*/
+/*Inicio Banner*/
     .banner-text{
         width: 50%;
     }
-    /*Cierre Banner*/
+/*Cierre Banner*/
 
-    /*Inicio descripcion*/
+/*Inicio descripcion*/
     .descripcion{
         display:flex;
         align-items:center;
@@ -268,58 +315,9 @@ h1,h2,h3,h4,h5{
         height: 13rem;
         flex-basis: 30%;
     }
-    /*Cierre descripcion*/
+/*Cierre descripcion*/
 
-    /*Inicio feature*/
-    /*
-    #features{
-        display:flex;
-        flex-direction: column;
-        background-image: url(../img/bg-features.png) ;
-        padding: 1rem;
-        color: var(--blanco);
-    }
-    .features-title{
-        background-color: rgba(0, 0, 0, 0.2);
-        text-align: center;
-        font-size: 2em;
-    }
-    .features-description{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin:2rem 0;
-
-    }
-    .feature{
-        text-align: center;
-        padding: 1rem;
-            min-width: 180px;
-            max-width: 250px;  
-        border-radius: 3px;  
-    }
-    .feature i{
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-    }
-    .feature-blue{
-        margin: 1rem;
-        background-color: #00325eae;
-        
-    }
-    .feature-black{
-        background-color: rgba(0,0,0,0.59);
-        margin: 1rem;
-    }
-    .feature-1{
-        display:flex;
-    }
-    .feature-2{
-        display: flex;
-        flex-direction: row-reverse;
-
-    }
-    */
+/*Inicio feature*/
     #features{
         padding:1rem 0;
     }
@@ -352,7 +350,27 @@ h1,h2,h3,h4,h5{
         display: flex;
         flex-direction: row-reverse;
     }
-    /*Cierre feature*/
+/*Cierre feature*/
+
+/*Inicio Ubicanos*/
+    #ubicacion hr{
+        width:75%;
+    }
+    .ubicacion-title{
+        font-size: 3rem;
+    }
+    .ubicacion-map iframe{
+        height: 330px;
+    } 
+    .ubicacion-info {
+        font-size: 1.7rem;
+        padding: 0.5rem;
+    }
+/*Cierre Ubicanos*/
+
+/*Inicio Banner*/
+    
+/*Cierre Banner*/
 }
 
 /*Resolución Macro*/
