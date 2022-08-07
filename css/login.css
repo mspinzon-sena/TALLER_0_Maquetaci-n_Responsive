@@ -19,12 +19,10 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-
     background: url(../img/bg-login.png); 
     background-position: center center;
     background-repeat: no-repeat; 
-    background-size: cover;
-    
+    background-size: cover; 
 }
 h1,h2,h3,h4,h5{
      font-family: 'Marcellus', serif;
@@ -75,15 +73,17 @@ h1,h2,h3,h4,h5{
 }
 .navbarbutton{
     background-color: var(--negro2);
-            border: none;
-            border-radius: 3px;
-            font-size: 1em;
-            padding: 0.5rem;
-            margin-top: 1.5rem;
-            font-family: 'Marcellus', serif;
-            color: var(--blanco);
-            cursor: pointer;
-            width:18rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+    cursor: pointer;
+    width:18rem;
+    text-align: center;
+    text-decoration: none;
 }
 .text-footer{
     display: none;
@@ -92,77 +92,17 @@ h1,h2,h3,h4,h5{
 .text-register-footer{
     padding: 1rem;
     color:var(--negro2);
-    
 }
 .text-opcion-footer{
     padding: 1rem;
     color:var(--blanco);
 }
+/*Resoluciones medias*/
 @media screen and (min-width:1024px) {
-    .container{
-        display: flex;
-        height: 100vh;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .contain{
-        border-radius: 3px;
-        height:27rem;
-        width:25rem;
-        background-color:var(--azuloscuro);
-    }
-    .contain-header img{
-        width:100%;
-    }
-    .contain-header .logo{
-        position:absolute;
-        padding:1rem;
-        width:10rem;
-    }
-    .contain-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contain-form .text-opcion{
-        border: none;
-        border-radius: 3px;
-        color:var(--blanco);
-        margin:0.2rem 3rem;
-        padding-bottom: 0.6rem;
-        width: 18rem;
-    }
-    .contain-form i{
-        font-size:1.8rem;
-        color:var(--blanco);
-        padding: 0.7rem;
-        background-color:var(--Magenta);
-        border-radius: 100%;
-    }
-    .navbarbutton{
-        background-color: var(--negro2);
-                border: none;
-                border-radius: 3px;
-                font-size: 1em;
-                padding: 0.5rem;
-                margin-top: 1.5rem;
-                font-family: 'Marcellus', serif;
-                color: var(--blanco);
-                cursor: pointer;
-                width:18rem;
-    }
     .text-footer{
         display: flex;
-        font-size: 0.8rem;
     }
     .text-register-footer{
-        padding: 1rem;
-        color:var(--negro2);
-        
-    }
-    .text-opcion-footer{
-        padding: 1rem;
-        color:var(--blanco);
+        text-decoration: none;  
     }
 }

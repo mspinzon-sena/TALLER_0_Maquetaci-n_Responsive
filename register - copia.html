@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/register.css" type="text/css">
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="container-grid">
+    <div class="body">
+      <!--Primera parte , incluye Logo-Texto y Texto-->
+        <div class="first-part">
+          <div class="logo">
+            <img src="img/hotelia campana.svg">
+            <h1>otelia</h1>
+          </div>
+          <div class="text-mobile">
+            <h1>Un lugar en tu corazón</h1>
+          </div>
+          <div class="text-pc">
+            <h1>Eres más que bienvenido</h1>
+          </div>
+        </div>
+      <!--Fin primera parte-->
+
+      <!--Segunda parte, Formulario-Terminos-Boton -->
+        <div class="second-part">
+        <h1>Registrate</h1>
+            <!--Formulario-->
+            <form>
+              <div class="part-one"> <!--Division en dos partes pues en 1024px se divide el formulario en dos-->
+                <div class="general-div">
+                  <label>Tipo de documento</label>
+                  <select>
+                    <option disabled="null" selected="null">Escoja una opción</option>
+                    <option>TI</option>
+                    <option>NIT</option>
+                    <option>CED</option>
+                    <option>CC</option>
+                  </select>
+                </div>
+                <div class="general-div">
+                  <label>Número de documento</label>
+                  <textarea></textarea>
+                </div>
+
+                <div class="general-div">
+                  <label>Nombres</label>
+                  <textarea></textarea>
+                </div>
+
+                <div class="general-div">
+                  <label>Apellidos</label>
+                  <textarea></textarea>
+                </div>
+
+                <div class="general-div">
+                  <label>Fecha Nacimiento</label>
+                  <input type="date" access="false" class="input-date">
+                </div>
+                <div class="genero">
+                  <label>Género</label>
+                  <div class="genero-inputs">
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio">
+                      <label>Mujer</label>
+                    </div>
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio">
+                      <label>Hombre</label>
+                    </div>
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio">
+                      <label>Otro</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="general-div">
+                  <label>Email</label>
+                  <textarea></textarea>
+                </div>
+                <div class="general-div">
+                  <label>Teléfono de Contacto</label>
+                  <textarea></textarea>
+                </div>
+                <div class="general-div">
+                  <label>País de origen</label>
+                  <select>
+                    <option disabled="null" selected="null"></option>
+                    <option>Colombia</option>
+                    <option>Otro ...</option>
+                  </select>
+                </div>
+                <div class="general-div">
+                  <label>Foto</label>
+                  <label for="file-upload" class="foto">
+                    Seleccionar archivo
+                  </label>
+                  <input id="file-upload" type="file" />
+                </div>
+
+                <div class="general-div">
+                  <label>Contraseña</label>
+                  <textarea></textarea>
+                </div>
+                <div class="general-div">
+                  <label>Confirma contraseña</label>
+                  <textarea></textarea>
+                </div>
+
+                </div>
+              
+            
+          <div class="part-two">
+
+          </div>
+          <div class="footer">
+            <div class="term">
+                <div class="genero-input">
+                  <input type="checkbox" class="term-checkbox">
+                  <label>Acepto Términos y Condiciones</label>
+                </div>
+            </div>
+            <div class="contain-form" >
+              <a href="index-css-grid.html"<button class="navbarbutton">Ingresar</button></a>
+            </div>
+        </div>
+        </form>
+      </div>
+
+      
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+--azulclaro: #48D6ED;
+--azuloscuro: #3379b7d0;
+--azulnegro: #303342;
+--negro: #333333;
+--negro2: #000;
+--gris: #B2B3B3;
+--fondo: #FFFEFC;
+--verdeazul: #157A8A;
+--Magenta: #9C2759;
+--blanco: #fff;
+--degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+*{
+    margin:0;
+    font-weight: normal; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/bg-register.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1,h2,h3,h4,h5{
+     font-family: 'Marcellus', serif;
+}
+
+/*Mobile First*/
+.body{
+    display: flex;
+    flex-direction: column;
+}
+    /*First Part*/
+        /*Logo - Text*/
+            .logo{
+                display: flex;
+                align-items: center;
+                font-size: 2.2rem;
+            }
+            .first-part img{
+                height: 5rem;
+            }
+            .text-mobile{
+                text-shadow: 1px 1px 4px var(--negro);
+                font-size: 1.6rem;
+            }
+            .text-pc{
+                text-shadow: 1px 1px 4px var(--negro);
+                display: none;
+            }
+        /*Background*/
+            .first-part{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+                padding: 1rem;
+                background: linear-gradient(90deg, rgba(50,109,158,1) 0%, rgba(16,62,100,1) 100%);
+                text-shadow: 1px 1px 4px var(--negro);
+                color: white;
+            }
+    /*Second Part*/  
+            /*Background*/
+                .second-part{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding:2rem;
+                    margin:2rem 4rem;
+                    border-radius: 3px;
+                    background-color: rgba(255, 255, 255, 0.774);
+                    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.5);
+                }
+            /*Part One*/
+                /*General*/
+                    .second-part textarea { 
+                        border-radius: 4px;
+                        resize: none;  
+                        font-family: sans-serif;
+                        box-shadow: 0px 2px 1px rgba(150, 150, 150, 0.5); 
+                        border:none;
+                    }
+                    .second-part select { 
+                        border-radius: 4px;
+                        resize: none;  
+                        font-family: sans-serif;
+                        box-shadow: 0px 2px 1px rgba(150, 150, 150, 0.5); 
+                        border:none;
+                        padding: 0.4rem;
+                    }
+                    .general-div{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0.5rem 0;
+                    }
+                    .second-part label{
+                        padding: 0.4rem 0;
+                    }
+                /*Inputs*/
+                    /*Date*/
+                        .second-part .input-date { 
+                            border-radius: 4px;
+                            resize: none;  
+                            font-family: sans-serif;
+                            box-shadow: 0px 2px 1px rgba(150, 150, 150, 0.5); 
+                            border:none;
+                            padding: 0.4rem;
+                        }
+                    /*Genero*/
+                        .genero {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0.5rem 0;
+                        }
+                        .genero-inputs{
+                            display: flex;
+                        }
+                        .genero-input{
+                            padding-right: 1rem;
+                        }
+                        .input-radio { 
+                            border:2px solid white;
+                            box-shadow:0 0 0 1px var(--azuloscuro);
+                            appearance:none;
+                            border-radius:50%;
+                            width:12px;
+                            height:12px;
+                            background-color:#fff;
+                        }
+                        .input-radio:checked{
+                            background-color: var(--azuloscuro);
+                        }
+                    /*Foto*/
+                        input[type="file"] {
+                            display: none;
+                        }
+                        .foto {
+                            width: 50vh;
+                            border-radius: 4px;
+                            background-color:#fff;
+                            box-shadow: 0px 2px 1px rgba(150, 150, 150, 0.5); 
+                            border:none;
+                            cursor: pointer;
+                            color: var(--gris);
+                            text-shadow: none;
+                        }
+                
+            /*Final First Part*/
+
+            /*Part Two*/
+            .part-two{
+                display: none;
+            }
+            /*Final Second Part*/
+            
+            
+            /*Footer*/
+                    /*Term*/
+                    .term{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        padding: 1rem;
+                    }
+                    .term-checkbox {
+                        margin: 0.7rem;
+                    }
+                    /*Button*/
+                    .contain-form{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .contain-form .text-opcion{
+                        border: none;
+                        border-radius: 3px;
+                        color:var(--blanco);
+                        margin:0.2rem 3rem;
+                        padding-bottom: 0.6rem;
+                        width: 18rem;
+                    }
+                    .navbarbutton{
+                        background-color: var(--negro2);
+                        border: none;
+                        border-radius: 3px;
+                        font-size: 1em;
+                        padding: 0.5rem;
+                        font-family: 'Marcellus', serif;
+                        color: var(--blanco);
+                        cursor: pointer;
+                        width: 7rem;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+
+
+/*Resoluciones medias*/
+@media screen and (min-width:1024px) {
+    .body{
+        flex-direction:row;
+    }
+    /*First Part*/
+        /*Logo - Text*/
+            .logo{
+                font-size: 1.5rem;
+            }
+            .text-mobile{
+                display:none;
+            }
+            .text-pc{
+                display:block;
+            }
+        /*Background*/
+        .first-part{
+            justify-content: center;
+            background: linear-gradient(90deg, rgba(50,109,158,1) 0%, rgba(19,73,119,0.80015756302521) 100%);            
+            margin-top: 0;
+        }
+    /*Second Part*/
+        /*Background*/
+            .second-part{
+                margin: 1.5rem;
+            }
+        /*Tamaños de las partes*/
+        .form{
+            justify-content:space-around;
+        }
+        .part-one{
+            display:block;
+            flex-basis: 50%;
+        }
+
+        /*Part Two Visible*/
+            .part-two{
+                display:block;
+            }
+        /*Form*/
+            /*General*/
+                .form{
+                    display: flex;
+                    flex-wrap: wrap;      
+                }
+                .genero{
+                    margin-bottom: 0.3rem;
+                }
+            /*No se van a ver en la  parte 1 del formulario: */
+            .numero-documento , .apellido , .generos,.telefono,.fotos,.confirm{
+                display:none;
+            }
+            /*Footer*/
+            .term{
+                font-size: 1rem;
+            }
+
+
+}
