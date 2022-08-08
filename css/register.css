@@ -221,6 +221,9 @@ h1,h2,h3,h4,h5{
             background: linear-gradient(90deg, rgba(50,109,158,1) 0%, rgba(19,73,119,0.80015756302521) 100%);            
             margin-top: 0;
         }
+        .text-pc{
+            margin-top:1.5rem;
+        }
     /*Second Part*/
         /*Background*/
             .second-part{

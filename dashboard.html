@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/502730301f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="container-grid">
+    <div class="body">
+      <!--Primera parte , incluye Logo-Texto y Texto-->
+        <div class="first-part">
+          <div class="logo-and-img">
+            <div class="logo">
+              <img src="img/hotelia campana.svg">
+              <h1>otelia</h1>
+            </div>
+            <div class="user">
+              <div class="user-img">
+                <img src="img/angie" class="angie">
+               
+              </div>
+              <div class="user-text">
+                <p>Angie Vargas</p>
+                <p class="text-email">angievargas2@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <div class="icons-general">
+              <i class="fa-solid fa-bed block"><h1 class="icons-text">Habitaciones</h1></i>
+              <i class="fa-solid fa-bell-concierge selected block"><h1 class="icons-text">Reservas</h1></i>
+              <i class="fa-solid fa-bed block"><h1 class="icons-text">Habitaciones</h1></i>
+              <i class="fa-solid fa-bell-concierge selected block"><h1 class="icons-text">Reservas</h1></i>
+            </div>
+            <div class="icon-exit">
+              <i class="fa-solid fa-arrow-right-from-bracket block"><h1 class="icons-text">Cerrar sesión</h1></i>
+            </div>
+          </div>
+
+        </div>
+      <!--Fin primera parte-->
+
+      <!--Segunda parte, Formulario-Terminos-Boton -->
+        <div class="second-part">
+          <div class="title">
+        <h1>Bienvenido, Angie Vargas</h1>
+        </div>
+
+        <div class="content-general">
+
+        <div class="img-icon">
+          <img src="img/angie-vargas.PNG">
+          <div class="general-div fotos">
+            <label for="file-upload" class="foto">
+              <i class="fa-solid fa-file-arrow-up archivo-subir"></i>
+              <i class="fa-solid fa-download"></i>
+            </label>
+            <input id="file-upload" type="file" />
+            
+          </div>
+          <div class="general-button cambiar-contraseña">
+            <a href="index-css-grid.html"<button class="generalbutton cambiar-contraseña">Cambiar contraseña</button></a>
+            </div>
+          
+        </div>
+            <!--Formulario-->
+            <form class="form">
+              <div class="part-one"> <!--Division en dos partes pues en 1024px se divide el formulario en dos-->
+                <div class="general-div">
+                  <label>Tipo de documento</label>
+                  <input class="input" value="Cédula de ciudadania" disabled></input>
+
+                </div>
+
+                <div class="general-div">
+                  <label>Nombres</label>
+                  <input class="input" value="Angie Camila" disabled></input>
+                </div>
+
+                <div class="general-div">
+                  <label>Fecha Nacimiento</label>
+                  <input class="input" value="10/08/1976" disabled></input>
+                </div>
+
+                <div class="genero generos">
+                  <label>Género</label>
+                  <div class="genero-inputs">
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio" checked="checked" disabled>
+                      <label>Mujer</label>
+                    </div>
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio" disabled>
+                      <label>Hombre</label>
+                    </div>
+                    <div class="genero-input">
+                      <input type="radio" class="input-radio" disabled>
+                      <label>Otro</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="general-div">
+                  <label>Email</label>
+                  <input class="input" value="angievargas2@gmail.com" disabled></input>
+                </div>
+
+                <div class="general-div country">
+                  <label>País de origen</label>
+                  <input class="input" value="Colombia" disabled></input>
+                </div>
+
+                <div class="general-div phone-contact">
+                  <label>Teléfono de Contacto</label>
+                  <input class="input" value="3135207460" disabled></input>
+                </div>
+
+                  <div class="general-button">
+                  <a href="index-css-grid.html"<button class="generalbutton">Actualizar</button></a>
+                  </div>
+                </div>
+              
+            
+          <div class="part-two">
+            <div class="general-div numero-documento">
+              <label>Número de documento</label>
+              <input class="input" value="EDITAR" disabled></input>
+            </div>
+
+            <div class="general-div">
+              <label>Apellidos</label>
+              <input class="input" value="Vargas Pinzón" disabled></input>
+            </div>
+            <div class="general-div">
+              <label>País de origen</label>
+              <input class="input" value="Colombia" disabled></input>
+            </div>
+            <div class="general-div">
+              <label>Teléfono de Contacto</label>
+              <input class="input" value="3135207460" disabled></input>
+            </div>
+
+          </div>
+          
+
+      </div>
+      <div class="footer">
+        <div class="term">
+            <div class="genero-input">
+              <div class="general-div ">
+                <label>Contraseña</label>
+                <textarea></textarea>
+              </div>
+              <div class="general-div ">
+                <label>Confirma contraseña</label>
+                <textarea></textarea>
+              </div>
+            </div>
+        </div>
+        <div class="general-button">
+          <a href="index-css-grid.html"<button class="generalbutton">Cambiar</button></a>
+          </div>
+        </div>
+        </div>
+
+        </form>
+      </div>
+
+      
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
